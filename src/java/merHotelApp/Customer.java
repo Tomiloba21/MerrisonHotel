@@ -4,44 +4,32 @@
  */
 package merHotelApp;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 /**
  *
- * @author admin
+ * @author admin->Tomiloba Olowo 
+ * SWE -> Spring
  */
+
+@Component
+
 public class Customer {
-     private String accountName;
     private String firstName;
     private String middleName;
     private String lastName;
-    private String dateOfBirth;
-    private String monthOfBirth;
-    private String yearOfBirth;
-    private String motherName;
+    private String address;
+    private String checkInDate;
+    private String checkInMonth;
+    private String checkInYear;
     private String emailID;
     private String gender;
-    private String maritalStatus;
-    private String houseNo;
-    private String StreetName;
-    private String state;
     private String City;
-    private String pinCode;
     private String phone;
     private String userName;
     private String password;
 
-    /**
-     * @return the accountName
-     */
-    public String getAccountName() {
-        return accountName;
-    }
-
-    /**
-     * @param accountName the accountName to set
-     */
-    public void setAccountName(String accountName) {
-        this.accountName = accountName;
-    }
 
     /**
      * @return the firstName
@@ -86,59 +74,59 @@ public class Customer {
     }
 
     /**
-     * @return the dateOfBirth
+     * @return the address
      */
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public String getAddress() {
+        return address;
     }
 
     /**
-     * @param dateOfBirth the dateOfBirth to set
+     * @param address the address to set
      */
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     /**
-     * @return the monthOfBirth
+     * @return the checkInDate
      */
-    public String getMonthOfBirth() {
-        return monthOfBirth;
+    public String getCheckInDate() {
+        return checkInDate;
     }
 
     /**
-     * @param monthOfBirth the monthOfBirth to set
+     * @param checkInDate the checkInDate to set
      */
-    public void setMonthOfBirth(String monthOfBirth) {
-        this.monthOfBirth = monthOfBirth;
+    public void setCheckInDate(String checkInDate) {
+        this.checkInDate = checkInDate;
     }
 
     /**
-     * @return the yearOfBirth
+     * @return the checkInonth
      */
-    public String getYearOfBirth() {
-        return yearOfBirth;
+    public String getCheckInMonth() {
+        return checkInMonth;
     }
 
     /**
-     * @param yearOfBirth the yearOfBirth to set
+     * @param checkInonth the checkInonth to set
      */
-    public void setYearOfBirth(String yearOfBirth) {
-        this.yearOfBirth = yearOfBirth;
+    public void setCheckInMonth(String checkInonth) {
+        this.checkInMonth = checkInonth;
     }
 
     /**
-     * @return the motherName
+     * @return the checkInYear
      */
-    public String getMotherName() {
-        return motherName;
+    public String getCheckInYear() {
+        return checkInYear;
     }
 
     /**
-     * @param motherName the motherName to set
+     * @param checkInYear the checkInYear to set
      */
-    public void setMotherName(String motherName) {
-        this.motherName = motherName;
+    public void setCheckInYear(String checkInYear) {
+        this.checkInYear = checkInYear;
     }
 
     /**
@@ -170,62 +158,6 @@ public class Customer {
     }
 
     /**
-     * @return the maritalStatus
-     */
-    public String getMaritalStatus() {
-        return maritalStatus;
-    }
-
-    /**
-     * @param maritalStatus the maritalStatus to set
-     */
-    public void setMaritalStatus(String maritalStatus) {
-        this.maritalStatus = maritalStatus;
-    }
-
-    /**
-     * @return the houseNo
-     */
-    public String getHouseNo() {
-        return houseNo;
-    }
-
-    /**
-     * @param houseNo the houseNo to set
-     */
-    public void setHouseNo(String houseNo) {
-        this.houseNo = houseNo;
-    }
-
-    /**
-     * @return the StreetName
-     */
-    public String getStreetName() {
-        return StreetName;
-    }
-
-    /**
-     * @param StreetName the StreetName to set
-     */
-    public void setStreetName(String StreetName) {
-        this.StreetName = StreetName;
-    }
-
-    /**
-     * @return the state
-     */
-    public String getState() {
-        return state;
-    }
-
-    /**
-     * @param state the state to set
-     */
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    /**
      * @return the City
      */
     public String getCity() {
@@ -237,20 +169,6 @@ public class Customer {
      */
     public void setCity(String City) {
         this.City = City;
-    }
-
-    /**
-     * @return the pinCode
-     */
-    public String getPinCode() {
-        return pinCode;
-    }
-
-    /**
-     * @param pinCode the pinCode to set
-     */
-    public void setPinCode(String pinCode) {
-        this.pinCode = pinCode;
     }
 
     /**
@@ -294,5 +212,6 @@ public class Customer {
     public void setPassword(String password) {
         this.password = password;
     }
+    
     
 }

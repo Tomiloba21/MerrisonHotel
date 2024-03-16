@@ -12,12 +12,19 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author admin
  */
 public class App {
+
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("merHotelApp/springconfig.xml");
         
-        Customer bkBookingDetails = (Customer) context.getBean("CustomerBean");
-        String city = bkBookingDetails.getCity();
-        System.out.println("city");
+        BookingDetails bookingDetails = (BookingDetails) context.getBean("bookRoom");
+        bookingDetails.toString();
+        bookingDetails.book();
+   
+        
+//        Customer customer = (Customer) context.getBean("CustomerBean");
+//        
+//        System.out.println(customer.getAddress());
+//        System.out.println(customer.getFirstName());
     }
-    
+
 }
