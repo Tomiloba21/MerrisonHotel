@@ -4,33 +4,47 @@
  */
 package merHotelApp;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
+
+
 
 
 /**
  *
  * @author admin
  */
-@Configuration
 public class BookingDetails {
    
-    @Qualifier("customer")
+
     public Customer customer;
-    @Qualifier("rooms")
+    
     public Rooms rooms;
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Rooms getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(Rooms rooms) {
+        this.rooms = rooms;
+    }
+    
+    
 
     @Override
     public String toString() {
-        return "BookingDetails{" + "Mr. " + customer.getFirstName() +" "+customer.getLastName() + ", rooms=" + rooms.getRoomType() + '}';
+        return "BookingDetails{" + "Mr. " + getCustomer().getFirstName() +" "+getCustomer().getLastName() + ", rooms=" + getRooms().getRoomType() + '}';
     }
     
     public void book(){
-        System.out.println("Reservation bookd for  Mr." + customer.getFirstName()+ " " +  customer.getLastName()+""
-                + "======="+ rooms.getNoOfRooms()+ " rooms in " + rooms.getRoomType()+" Enjoy your stay :)");
+        System.out.println("Reservation bookd for  Mr." + getCustomer().getFirstName()+ " " +  getCustomer().getLastName()+""
+                + "======="+ getRooms().getNoOfRooms()+ " rooms in " + getRooms().getRoomType()+" Enjoy your stay :)");
     }
     
     public void reset(){

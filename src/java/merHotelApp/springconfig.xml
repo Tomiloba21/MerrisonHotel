@@ -25,7 +25,7 @@
     </bean>
     <bean id="rooms" class="merHotelApp.Rooms" >
         
-         <property name="roomType" value="Deluxe King Garden"/>
+         <property name="roomType" value="Deluxe King Garden" />
         <property name="noOfRooms" value="3"/>
         <property name="noOfChildren" value="2"/>
         <property name="noOfAdult" value="2"/>
@@ -34,7 +34,8 @@
     </bean>
     
     <bean id="bookRoom" class="merHotelApp.BookingDetails"  >
-
+    <property name="customer" ref="CustomerBean"/>
+    <property  name="rooms" ref="rooms"/>
     </bean>
 
 </beans>
