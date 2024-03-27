@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-
 public class Customer {
     private String firstName;
     private String middleName;
